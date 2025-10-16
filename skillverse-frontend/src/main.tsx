@@ -6,7 +6,6 @@ import Home from './pages/Home'
 import Course from './pages/Course'
 import './index.css'
 
-// Define routes
 const router = createBrowserRouter([
   {
     path: '/',
@@ -14,11 +13,10 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: 'course/:slug', element: <Course /> },
-    ],
-  },
+    ]
+  }
 ])
 
-// Render to the DOM
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <RouterProvider router={router} />

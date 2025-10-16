@@ -35,11 +35,11 @@ export default function Home(){
         {courses.map(c => (
           <a key={c.id} href={`/course/${c.slug}`}
              className="rounded-2xl p-4 bg-white/5 hover:bg-white/10 border border-white/10 transition">
-            {/* <div className="aspect-video rounded-xl bg-white/10 mb-3 overflow-hidden">
+            <div className="aspect-video rounded-xl bg-white/10 mb-3 overflow-hidden">
               {c.thumbnailUrl && (
                 <img src={c.thumbnailUrl} className="w-full h-full object-cover" />
               )}
-            </div> */}
+            </div>
             <div className="text-lg font-semibold mb-1">{c.title}</div>
             <div className="opacity-80 text-sm line-clamp-3">{c.description}</div>
           </a>
