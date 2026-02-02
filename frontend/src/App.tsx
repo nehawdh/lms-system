@@ -3,11 +3,11 @@ import Nav from "./components/Nav";
 
 export default function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-slate-950 text-white">
       <Nav />
-      <main className="max-w-6xl mx-auto p-6">
+      <main className="flex-1">
         <Outlet />
       </main>
     </div>
-  )
+  );
 }
